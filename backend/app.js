@@ -17,7 +17,8 @@ app.use("/api", router);
 //server run
 app.listen(port, () => {
   connectDB();
-  console.log("hello world");
+  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`MongoDB is connected`);
 });
 
 export default app;
